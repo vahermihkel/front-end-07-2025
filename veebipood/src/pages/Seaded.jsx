@@ -1,14 +1,34 @@
 import { useState } from "react"
 
 function Seaded() {
-  const [keel, setKeel] = useState("et");
+  const [keel, setKeel] = useState(localStorage.getItem("keel"));
+
+  function muudaKeelEE() {
+    setKeel("et");
+    localStorage.setItem("keel", "et");
+  }
+
+  function muudaKeelEN() {
+    setKeel("en");
+    localStorage.setItem("keel", "en");
+  }
+
+  function muudaKeelES() {
+    setKeel("es");
+    localStorage.setItem("keel", "es");
+  }
+
+  function muudaKeelRU() {
+    setKeel("ru");
+    localStorage.setItem("keel", "ru");
+  }
 
   return (
     <div>
-      <button onClick={() => setKeel("et")}>Eesti</button>
-      <button onClick={() => setKeel("en")}>English</button>
-      <button onClick={() => setKeel("es")}>Espanol</button>
-      <button onClick={() => setKeel("ru")}>Pycckuj</button>
+      <button className={keel === "et" ? "keel-aktiivne" : undefined} onClick={muudaKeelEE}>Eesti</button>
+      <button className={keel === "en" ? "keel-aktiivne" : undefined} onClick={muudaKeelEN}>English</button>
+      <button className={keel === "es" ? "keel-aktiivne" : undefined} onClick={muudaKeelES}>Espanol</button>
+      <button className={keel === "ru" ? "keel-aktiivne" : undefined} onClick={muudaKeelRU}>Pycckuj</button>
       <div>Hetkel aktiivse keele lühend: {keel}</div>
 
       {keel === "et" && <div>Leht on eesti keelne</div>}

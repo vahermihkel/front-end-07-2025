@@ -1,0 +1,9 @@
+[
+  {"keskus": "Ülemiste", "aadress": "Suur-Sõjamäe 87", "tel": 551243124},
+  {"keskus": "Rocca al Mare", "aadress": "Loomaaia 11", "tel": 5512431276},
+  {"keskus": "Magistrali", "aadress": "Magi 1412", "tel": 5512431412},
+  {"keskus": "Vesse", "aadress": "Vesi 123", "tel": 55124399},
+  {"keskus": "Kristiine", "aadress": "Endla 91", "tel": 551243165},
+  {"keskus": "Järveotsa", "aadress": "Järve 123", "tel": 5512431123},
+  {"keskus": "Viru keskus", "aadress": "Viru 55", "tel": 551243154}
+]

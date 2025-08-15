@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -16,4 +16,75 @@
 
 .pilt:active {
   transform: scale(90%);
+}
+
+.summa-aktiivne {
+  border: 1px solid rgb(227 6 140);
+  color: rgb(227 6 140);
+}
+
+.linn-aktiivne {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.keel-aktiivne {
+  font-weight: bold;
+}
+
+.kuldne {
+  color: goldenrod;
+}
+
+.link {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.link:hover {
+  border: 1px solid gray;
+}
+
+.tume {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.ikoon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.ikoon:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.ikoon:active {
+  transform: scale(90%);
+}
+
+.map {
+  height: 300px;
+  margin: 3%;
+  border-radius: 10px;
+  /* filter: grayscale(80%); */
+}
+
+.carousel {
+  width: 500px;
+  margin: auto;
+}
+
+.carousel img {
+  height: 300px;
+}
+
+.MuiButton-outlined {
+  background-color: white !important;
 }
